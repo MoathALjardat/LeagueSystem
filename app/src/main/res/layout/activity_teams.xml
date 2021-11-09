@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".TeamsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="406dp"
+        android:layout_height="126dp"
+        android:background="@drawable/team"
+        app:layout_constraintBottom_toBottomOf="@+id/listview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintBottom_toTopOf="@+id/listview"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="35"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/purple_500"
+
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/lose"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+        <TextView
+            android:id="@+id/win"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:text="Win"
+            android:textColor="@color/purple_500"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/lose"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:text="Loss"
+            android:textColor="@color/purple_500"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <TextView
+            android:id="@+id/draw"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:text="Draw"
+            android:textColor="@color/purple_500"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/win"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="23"
+            android:gravity="center"
+            android:text="Score"
+            android:textColor="@color/purple_500"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/win"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteY="0dp" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="405dp"
+        android:layout_height="361dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/leagueName"
+        android:layout_width="384dp"
+        android:layout_height="121dp"
+        android:fontFamily="casual"
+
+
+        android:gravity="center|top"
+        android:text="TextView"
+        android:textColor="#2196F3"
+        android:textSize="30dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.152"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

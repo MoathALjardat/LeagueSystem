@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="show">Show</string>
+    <string name="teams">Teams</string>
+    <string name="scorers">Scorers</string>
+    <string name="welcome_to_leagues_system">Welcome To Leagues System</string>
+</resources>

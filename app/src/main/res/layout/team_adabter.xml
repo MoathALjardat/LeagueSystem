@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    tools:ignore="MissingConstraints">
+
+    <TextView        android:fontFamily="casual"
+
+        android:textStyle=""
+        android:id="@+id/name"
+        android:layout_height="60dp"
+        android:layout_weight="40"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/nameOfTeam"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_width="0dp"/>
+
+    <TextView        android:fontFamily="casual"
+
+        android:id="@+id/win"
+        android:layout_weight="15"
+        android:layout_height="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        tools:layout_editor_absoluteY="2dp"  android:layout_width="0dp"/>
+
+    <TextView        android:fontFamily="casual"
+
+        android:id="@+id/lose"
+        android:layout_weight="15"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView        android:fontFamily="casual"
+
+        android:id="@+id/draw"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="15"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/win"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="15"
+        android:fontFamily="casual"
+
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/win"
+        tools:ignore="DuplicateIds"
+        tools:layout_editor_absoluteY="0dp" />
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
